@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Movie-Api-Frontend/static/css/main.e383af41.css",
-    "main.js": "/Movie-Api-Frontend/static/js/main.0a3a2a17.js",
+    "main.js": "/Movie-Api-Frontend/static/js/main.acd8bd55.js",
     "reactPlayerYouTube.js": "/Movie-Api-Frontend/static/js/reactPlayerYouTube.9c2d44d3.chunk.js",
     "reactPlayerSoundCloud.js": "/Movie-Api-Frontend/static/js/reactPlayerSoundCloud.e8badd85.chunk.js",
     "reactPlayerVimeo.js": "/Movie-Api-Frontend/static/js/reactPlayerVimeo.55469219.chunk.js",
@@ -18,7 +18,7 @@
     "reactPlayerPreview.js": "/Movie-Api-Frontend/static/js/reactPlayerPreview.68e87a89.chunk.js",
     "index.html": "/Movie-Api-Frontend/index.html",
     "main.e383af41.css.map": "/Movie-Api-Frontend/static/css/main.e383af41.css.map",
-    "main.0a3a2a17.js.map": "/Movie-Api-Frontend/static/js/main.0a3a2a17.js.map",
+    "main.acd8bd55.js.map": "/Movie-Api-Frontend/static/js/main.acd8bd55.js.map",
     "reactPlayerYouTube.9c2d44d3.chunk.js.map": "/Movie-Api-Frontend/static/js/reactPlayerYouTube.9c2d44d3.chunk.js.map",
     "reactPlayerSoundCloud.e8badd85.chunk.js.map": "/Movie-Api-Frontend/static/js/reactPlayerSoundCloud.e8badd85.chunk.js.map",
     "reactPlayerVimeo.55469219.chunk.js.map": "/Movie-Api-Frontend/static/js/reactPlayerVimeo.55469219.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.e383af41.css",
-    "static/js/main.0a3a2a17.js"
+    "static/js/main.acd8bd55.js"
   ]
 }
