@@ -16,7 +16,7 @@ export const Hero = ({ movies }) => {
     }
     return (
         <>
-            {movies &&
+            {
                 <div className="movie-carousel-container">
                     <Carousel>
                         {
