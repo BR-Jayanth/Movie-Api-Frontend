@@ -19,7 +19,7 @@ export const Hero = ({ movies }) => {
             {
                 <div className="movie-carousel-container">
                     <Carousel>
-                        {
+                        {movies &&
                             movies.map((movie, index) => {
                                 return (
                                     <Paper key={index}>
