@@ -4,6 +4,7 @@ import api from "../../api/axiosConfig"
 import { Container, Row, Col } from "react-bootstrap"
 import { useParams } from 'react-router-dom';
 import { ReviewForm } from '../reviewForm/ReviewForm';
+import { Loader } from '../Loader/Loader';
 
 export const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
   const revText = useRef();
@@ -33,43 +34,50 @@ export const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
   }
 
   return (
-    <Container>
-      <Row>
-        <Col> <h3>Review</h3></Col>
-      </Row>
-      <Row className='mt-2'>
-        <Col>
+    <>
 
-          <img src={movie?.poster} alt="" />
-        </Col>
-        <Col>
-          {
-            <>
-              <Row>
-                <Col>
-                  <ReviewForm handleSubmit={addReview} revText={revText} labelText={labelText} defaultValue={""} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <hr />
-                </Col>
-              </Row>
-            </>
-          }
-          {reviews && reviews.map((review, index) => {
-            return (
-              <Row key={index}>
-                <Col>
-                  {review.body}
-                  <hr />
-                </Col>
-              </Row>
-            )
-          })
-          }
-        </Col>
-      </Row>
-    </Container>
+      {reviews ?
+        <Container>
+          <Row>
+            <Col> <h3>Review</h3></Col>
+          </Row>
+          <Row className='mt-2'>
+            <Col>
+
+              <img src={movie?.poster} alt="" />
+            </Col>
+            <Col>
+              {
+                <>
+                  <Row>
+                    <Col>
+                      <ReviewForm handleSubmit={addReview} revText={revText} labelText={labelText} defaultValue={""} />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <hr />
+                    </Col>
+                  </Row>
+                </>
+              }
+              {reviews && reviews.map((review, index) => {
+                return (
+                  <Row key={index}>
+                    <Col>
+                      {review.body}
+                      <hr />
+                    </Col>
+                  </Row>
+                )
+              })
+              }
+            </Col>
+          </Row>
+        </Container>
+        : <Loader />
+      }
+    </>
+
   )
 }

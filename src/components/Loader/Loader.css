@@ -25,28 +25,28 @@
 @keyframes loaderAnimation {
     0% {
 
-        border-top: 10px solid white;
+        border-top: 10px solid black;
          transform: rotate(360deg); 
 
     }
 
     25% {
-        border-right: 10px solid white;
+        border-right: 10px solid black;
         transform: rotate(360deg); 
     }
 
     50% {
-        border-bottom: 10px solid white;
+        border-bottom: 10px solid black;
         transform: rotate(360deg); 
     }
 
     75% {
-        border-left: 10px solid white;
+        border-left: 10px solid black;
         transform: rotate(360deg); 
     }
 
     100% {
-        border-top: 10px solid white;
+        border-top: 10px solid black;
        
     }
 
